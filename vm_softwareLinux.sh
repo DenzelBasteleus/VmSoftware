@@ -31,4 +31,4 @@ EndSection" | sudo tee /etc/X11/xorg.conf.d/00-keyboard.conf
 echo "✅ Installatie volledig voltooid!"
 
 echo "🔄 Het systeem wordt herstart om de wijzigingen toe te passen..."
-sudo reboot
+
