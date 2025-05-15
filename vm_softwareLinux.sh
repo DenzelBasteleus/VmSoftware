@@ -23,17 +23,14 @@ Section "InputClass"
 EndSection
 EOF
 
+# Clone GitHub-repo
 echo "🔗 GitHub-repository klonen..."
 cd ~
-if [ -d "CyberSec25" ]; then
-    echo "De map CyberSec25 bestaat al, probeer te updaten..."
-    cd CyberSec25
-    git pull
-else
-    git clone https://github.com/SanderSchepers1993/CyberSec25.git
-fi
+git clone https://github.com/SanderSchepers1993/CyberSec25.git
+
 
 echo "✅ Installatie volledig voltooid!"
 
-echo "🔄 Het systeem wordt nu herstart om de wijzigingen toe te passen..."
+# Herstarten van het systeem
+echo "🔄 Het systeem wordt herstart om de wijzigingen toe te passen..."
 sudo reboot
