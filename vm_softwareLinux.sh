@@ -33,4 +33,4 @@ echo "✅ Installatie volledig voltooid!"
 
 # Herstarten van het systeem
 echo "🔄 Het systeem wordt herstart om de wijzigingen toe te passen..."
-sudo reboot
+
