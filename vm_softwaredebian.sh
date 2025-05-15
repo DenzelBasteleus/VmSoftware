@@ -15,8 +15,19 @@ sudo apt-get install -y build-essential dkms linux-headers-$(uname -r)
 echo "VirtualBox Guest Additions installeren..."
 sudo apt-get install -y virtualbox-guest-utils virtualbox-guest-x11
 
-sudo apt-get install git  # Installeer Git als je het nog niet hebt
+# Git installeren en repository klonen
+sudo apt-get install -y git
 git clone https://github.com/SanderSchepers1993/CyberSec25.git
 cd CyberSec25
 
+# Toetsenbordinstellingen aanpassen naar BE AZERTY
+echo "Toetsenbord wijzigen naar BE azerty..."
+sudo sed -i 's/XKBLAYOUT=.*/XKBLAYOUT="be"/' /etc/default/keyboard
+sudo dpkg-reconfigure -f noninteractive keyboard-configuration
+sudo service keyboard-setup restart
+
 echo "Installatie en koppelen aan git voltooid op Debian!"
+
+# Herstart de VM automatisch
+sudo reboot
+
