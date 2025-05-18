@@ -5,7 +5,7 @@ echo "Repositories bijwerken..."
 sudo apt-get update
 
 # Vereiste software installeren
-sudo apt update && sudo apt install -y default-jdk wget
+sudo apt install -y default-jdk wget
 
 # Installeren van de build-tools voor Guest Additions
 echo "Installeren van build-tools voor Guest Additions..."
