@@ -29,7 +29,8 @@ fi
 
 # Vereiste software installeren
 echo "🛠 Java JDK en Python3 installeren..."
-sudo apt install -y default-jre default-jre-headless python3
+sudo apt install -y default-jdk 
+sudo apt install -y default-jre-headless python3
 
 echo "👉 koppelen aan de github"
 sudo apt-get install -y git
