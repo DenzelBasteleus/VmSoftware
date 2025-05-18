@@ -4,8 +4,8 @@
 echo "Repositories bijwerken..."
 sudo apt-get update
 
-echo "Apache2 installeren..."
-sudo apt-get install -y apache2
+# Vereiste software installeren
+sudo apt update && sudo apt install -y default-jdk wget
 
 # Installeren van de build-tools voor Guest Additions
 echo "Installeren van build-tools voor Guest Additions..."
